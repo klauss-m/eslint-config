@@ -1,0 +1,40 @@
+{
+  "name": "@klauss-m/eslint-config",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Custom eslint configuration using airbnb's styleguide",
+  "main": "index.js",
+  "author": {
+    "name": "Klauss Marques",
+    "email": "klauss.marques@gmail.com"
+  },
+  "keywords": [
+    "eslint",
+    "configuration",
+    "custom",
+    "airbnb"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:klauss-m/eslint-config"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@klauss-m/prettier-config": "^1.0.2",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
+    "prettier": "^2.6.2"
+  }
+}

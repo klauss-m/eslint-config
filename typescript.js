@@ -1,0 +1,31 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 'latest',
+  },
+  extends: [
+    'airbnb-base',
+    'airbnb-typescript/base',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
+    'prettier',
+  ],
+  plugins: ['jest'],
+  env: {
+    node: true,
+    jest: true,
+  },
+  settings: {
+    jest: {
+      version: 'latest',
+    },
+  },
+  rules: {
+    'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
+  },
+}
